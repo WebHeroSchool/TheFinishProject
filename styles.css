@@ -11,19 +11,21 @@
   display: flex;
   justify-content: space-between;
   margin-bottom: 80px;
-  padding-top: 24px;
-  padding-left: 42px;
+  padding-top: 15px;
   border: 1px solid red;
 }
 
 .logo {
   display: inline-block;
+  padding-left: 30px;
   border: 1px solid red;
 }
 .menu-model {
   display: inline-block;
+  position: relative;
   text-align: center;
   padding-top: 16px;
+  padding-left: 4%;
 }
 .menu-model__item {
   font: 600 15px/18px Semibold, arial, helvetica, sans-serif;
@@ -31,8 +33,23 @@
   border: 1px solid red;
 }
 
+.menu-model__item:first-child {
+  margin-right: 63px;
+}
+.menu-model__item:nth-child(2n) {
+  margin-right: 25px;
+}
+
+.menu-model__item:nth-child(3n) {
+  margin-right: 44px;
+}
+
+.menu-model__item:nth-child(4n) {
+  margin-right: 46px;
+}
 .menu-entrance {
     display: inline-block;
+    position: relative;
     padding-top: 16px;
 }
 
@@ -40,14 +57,17 @@
   font: 600 15px/18px Semibold, arial, helvetica, sans-serif;
   color: #000;
   border: 1px solid red;
+  margin-right: 30px;
 }
+
 
 .lines {
   display: inline-block;
   position: relative;
   border-bottom: 2px solid red;
   width: 24px;
-  margin-bottom: 4px;
+  margin-right: 60px;
+  bottom: 20%;
 }
 
 .lines::before,
