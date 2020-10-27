@@ -1,0 +1,28 @@
+.wrapper {
+  width: 80%;
+  border: 1px solid red;
+}
+
+.menu-model__item {
+  font: 600 15px/18px Semibold, arial, helvetica, sans-serif;
+  color: #000;
+  border: 1px solid red;
+}
+
+.menu-entrance__item {
+  font: 600 15px/18px Semibold, arial, helvetica, sans-serif;
+  color: #000;
+  border: 1px solid red;
+}
+
+.main__name-model {
+  font: 600 90px/110px Semibold, arial, helvetica, sans-serif;
+  color: #000;
+  border: 1px solid red;
+}
+
+.main__welcome {
+  font: 500 15px/18px "Medium", arial, helvetica, sans-serif;
+  color: #000;
+  border: 1px solid red;
+}
