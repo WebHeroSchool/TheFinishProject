@@ -10,8 +10,8 @@
 .header {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 80px;
-  padding-top: 15px;
+  padding-top: 10px;
+  margin-bottom: 54px;
   border: 1px solid red;
 }
 
@@ -21,36 +21,80 @@
   border: 1px solid red;
 }
 .menu-model {
-  display: inline-block;
-  position: relative;
-  text-align: center;
-  padding-top: 16px;
-  padding-left: 4%;
+  display: flex;
+  align-items: center;
+  margin-right: 5px;
 }
+
 .menu-model__item {
   font: 600 15px/18px Semibold, arial, helvetica, sans-serif;
+  position: relative;
+  margin-right: 24px;
   color: #000;
   border: 1px solid red;
+  box-sizing: border-box;
+  text-decoration: none;
+  cursor: pointer;
+  transition: opacity .5s;
+}
+
+.menu-model__item:hover {
+  opacity: .5;
+  color: #e51937;
+}
+
+.menu-model__item_active::after {
+  position: absolute;
+  display: block;
+  content: '';
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: #e51937;
+}
+
+.menu-model__item::after {
+  position: absolute;
+  display: block;
+  content: '';
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: #e51937;
+  opacity: 0;
+  transition: opacity .5s, width .5s;
+}
+
+.menu-model__item:hover::after,
+.menu-model__item_active::after {
+  opacity: 1;
+  width: 100%;
 }
 
 .menu-model__item:first-child {
-  margin-right: 63px;
+  color: #e51937;
 }
 .menu-model__item:nth-child(2n) {
-  margin-right: 25px;
+  left: 36px;
 }
 
 .menu-model__item:nth-child(3n) {
-  margin-right: 44px;
+  left: 36px;
 }
 
 .menu-model__item:nth-child(4n) {
-  margin-right: 46px;
+  left: 52px;
 }
+
+.menu-model__item:last-child {
+  left: 72px;
+}
+
 .menu-entrance {
     display: inline-block;
     position: relative;
-    padding-top: 16px;
+    padding-top: 22px;
+    left: 9px;
 }
 
 .menu-entrance__item {
@@ -58,8 +102,13 @@
   color: #000;
   border: 1px solid red;
   margin-right: 30px;
+  transition: opacity .5s;
+  cursor: pointer;
 }
 
+.menu-entrance__item:hover {
+  opacity: .5;
+}
 
 .lines {
   display: inline-block;
@@ -79,14 +128,46 @@
   margin-bottom: 4px;
 }
 
-.main__name-model {
+.main1__name-model {
   font: 600 90px/110px Semibold, arial, helvetica, sans-serif;
   color: #000;
+  text-align: center;
   border: 1px solid red;
+  margin: 0;
 }
 
-.main__welcome {
-  font: 500 15px/18px "Medium", arial, helvetica, sans-serif;
+.main1__welcome {
+  font: 500 15px/19px Medium, arial, helvetica, sans-serif;
   color: #000;
   border: 1px solid red;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.main1__car {
+  display: block;
+  padding-left: 13%;
+  padding-top: 3px;
+}
+
+.sign-speed__time, .sign-way__long {
+  font: 600 35px/43px Semibold, arial, helvetica, sans-serif;
+}
+.sign-speed__unit, .sign-way__unit {
+  font: 600 20px/24px Semibold, arial, helvetica, sans-serif;
+}
+
+.sign-speed__max, .sign-way__text {
+  font: normal 12px/15px Regular, arial, helvetica, sans-serif;
+}
+
+.test-drive {
+  font: bold 13px/16px Bold, arial, helvetica, sans-serif;
+}
+img {
+  border: 1px solid red;
+}
+.main2__infocar, .main3 {
+  background: #E51937;
 }
