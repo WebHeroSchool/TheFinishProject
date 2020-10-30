@@ -139,7 +139,8 @@
 .main1__welcome {
   font: 500 15px/19px Medium, arial, helvetica, sans-serif;
   color: #000;
-  border: 1px solid red;
+  line-height: 0;
+  letter-spacing: 1px;
   margin: 0;
   padding: 0;
   text-align: center;
@@ -148,26 +149,163 @@
 .main1__car {
   display: block;
   padding-left: 13%;
-  padding-top: 3px;
+  padding-top: 2%;
+  margin-bottom: 25px;
 }
 
+.signs {
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-direction: row;
+  width: 57%;
+  height: 4%;
+  border: 1px solid red;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.sign-speed, .sign-way, .footer__test-drive, .footer__button-order {
+  border: 1px solid red;
+}
+
+.sign-speed {
+  flex-basis: 22%;
+}
+
+.sign-speed__wrapper {
+  display: inline-flex;
+  border: 1px solid red;
+
+}
+
+.sign-speed__img {
+  float: left;
+  margin: 0 10px 0 0;
+  padding-top: 10px;
+}
+
+.sign-speed__time {
+  padding-top: 4px;
+    line-height: 0;
+}
+
+.sign-speed__unit {
+  padding: 17px 0 0 5px;
+  margin: 0;
+}
+
+.sign-speed__max{
+  position: relative;
+  margin-bottom: 10px;
+}
 .sign-speed__time, .sign-way__long {
   font: 600 35px/43px Semibold, arial, helvetica, sans-serif;
+  margin: 0;
+
 }
 .sign-speed__unit, .sign-way__unit {
   font: 600 20px/24px Semibold, arial, helvetica, sans-serif;
+
 }
 
 .sign-speed__max, .sign-way__text {
   font: normal 12px/15px Regular, arial, helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
 .test-drive {
   font: bold 13px/16px Bold, arial, helvetica, sans-serif;
 }
+
 img {
   border: 1px solid red;
 }
+
+.footer__button-order {
+  font: bold 13px/16px Bold, arial, helvetica, sans-serif;
+  color: #e51937;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 10px 43px;
+  border: 2px solid #e51937;
+  text-align: center;
+}
+
 .main2__infocar, .main3 {
   background: #E51937;
+}
+
+.main2__name-model {
+  font: 600 70px/85px Semibold, arial, helvetica, sans-serif;
+  color: #e51937;
+}
+
+.main2__title,
+.main3__title,
+.main3__protection {
+  font: 600 30px/37px Semibold, arial, helvetica, sans-serif;
+  color: #fff;
+}
+
+.main2__description,
+.main3__description {
+  font: 500 15px/18px Medium, arial, helvetica, sans-serif;
+  color: #fff;
+}
+
+.sign-display__size,
+.sign-bag__volume {
+  font: 600 35px/43px Semibold, arial, helvetica, sans-serif;
+  color: #fff;
+}
+
+.sign-display__inches,
+.sign-bag__software {
+  font: 600 20px/24px Semibold, arial, helvetica, sans-serif;
+  color: #fff;
+}
+
+.sign-display__text,
+.sign-wi-fi__text,
+.sign-bag__text {
+  font: normal 12px/15px Regular, arial, helvetica, sans-serif;
+  color: #fff;
+}
+
+.sign-wi-fi__software {
+  font: 600 20px/18px Semibold, arial, helvetica, sans-serif;
+  color: #fff;
+}
+
+.main2-buttons__more-info,
+.main3-buttons__more-info,
+.main2-buttons__order,
+.main3-buttons__order {
+  font: bold 13px/16px Bold, arial, helvetica, sans-serif;
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.main2-buttons__order,
+.main3-buttons__order {
+  padding: 10px 43px;
+  border: 2px solid #fff;
+}
+
+.main3__protection-list {
+  font: bold 17px/21px Bold, arial, helvetica, sans-serif;
+  text-transform: uppercase;
+  color: #fff;
+}
+.sign-star__text1 {
+  font: 600 50px/61px Semibold, arial, helvetica, sans-serif;
+  color: #fff;
+}
+.sign-star__text2 {
+  font: 600 25px/30px Semibold, arial, helvetica, sans-serif;
+  color: #fff;
 }
