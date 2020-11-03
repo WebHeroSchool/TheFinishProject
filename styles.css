@@ -177,18 +177,12 @@
 .sign-speed__wrapper {
   display: inline-flex;
   border: 1px solid red;
-
 }
 
 .sign-speed__img {
   float: left;
   margin: 0 10px 0 0;
   padding-top: 10px;
-}
-
-.sign-speed__time {
-  padding-top: 4px;
-    line-height: 0;
 }
 
 .sign-speed__unit {
@@ -200,24 +194,67 @@
   position: relative;
   margin-bottom: 10px;
 }
+
+.sign-way {
+  width: 20%;
+  position: relative;
+  margin-right: 9px;
+  padding-left: 15px;
+}
+
+.sign-way__wrapper {
+  display: inline-flex;
+  border: 1px solid red;
+}
+.sign-way__img {
+  float: left;
+  padding-top: 10px;
+}
+.sign-way__long {
+  padding-left: 4px;
+}
+.sign-way__unit {
+  margin-top: 15px;
+  margin-bottom: 0;
+  padding-left: 10px;
+}
+
+.sign-way__text {
+  padding-left: 31%;
+}
 .sign-speed__time, .sign-way__long {
   font: 600 35px/43px Semibold, arial, helvetica, sans-serif;
   margin: 0;
-
 }
+
 .sign-speed__unit, .sign-way__unit {
   font: 600 20px/24px Semibold, arial, helvetica, sans-serif;
-
 }
 
 .sign-speed__max, .sign-way__text {
   font: normal 12px/15px Regular, arial, helvetica, sans-serif;
   margin: 0;
-  padding: 0;
 }
 
-.test-drive {
+.sign-test {
+  display: inline-block;
+  position: relative;
+  padding-top: 10px;
+  border: 1px solid red;
+  padding-left: 40px;
+  width: 16%;
+}
+
+.sign-test__drive {
   font: bold 13px/16px Bold, arial, helvetica, sans-serif;
+  padding-left: 35px;
+  text-transform: uppercase;
+}
+
+.sign-test__img {
+  padding-top: 10px;
+  float: left;
+  padding-left: 8px;
 }
 
 img {
@@ -225,6 +262,7 @@ img {
 }
 
 .footer__button-order {
+  position: relative;
   font: bold 13px/16px Bold, arial, helvetica, sans-serif;
   color: #e51937;
   text-transform: uppercase;
@@ -232,6 +270,25 @@ img {
   padding: 10px 43px;
   border: 2px solid #e51937;
   text-align: center;
+  margin-top: 13px;
+  margin-right: 10px;
+  cursor: pointer;
+  transition: opacity .3s;
+}
+
+.main1__vector {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 20px;
+}
+
+.main2 {
+  display: flex;
+  flex-direction: row;
+
+  justify-content: space-between;
+  border: 1px solid black;
 }
 
 .main2__infocar, .main3 {
@@ -239,8 +296,23 @@ img {
 }
 
 .main2__name-model {
+  display: block;
   font: 600 70px/85px Semibold, arial, helvetica, sans-serif;
   color: #e51937;
+  padding-top: 40px;
+  padding-left: 70px;
+  margin-bottom: 0;
+}
+
+.main2__infocar {
+  display: block;
+  position: relative;
+  z-index: 20;
+}
+
+.main2__car {
+  display: block;
+  z-index: 10;
 }
 
 .main2__title,
