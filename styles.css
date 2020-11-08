@@ -258,6 +258,18 @@ body {
   padding-left: 6px;
 }
 
+@keyframes forbutton {
+  0% {
+    transform: rotateY(0deg);
+  }
+  50% {
+    transform: rotateY(20deg);
+  }
+  100% {
+    transform: rotateY(0deg);
+  }
+}
+
 .footer__button-order {
   position: relative;
   font: bold 13px/16px Bold, arial, helvetica, sans-serif;
@@ -271,7 +283,17 @@ body {
   margin-top: 9px;
   margin-right: 12px;
   cursor: pointer;
+  opacity: .8;
   transition: opacity .3s;
+  animation: forbutton .8s infinite ease;
+}
+
+.footer__button-order:hover {
+  background-color: #e51937;
+  color: #fff;
+  opacity: 1;
+  transition: color, background-color, opacity .5s;
+  animation: none;
 }
 
 .main1__vector {
@@ -460,7 +482,15 @@ body {
 .main2-buttons__order {
   margin-right: 3px;
   margin-left: 10px;
+}
 
+.main2-buttons__order:hover,
+.main3-buttons__order:hover {
+  background-color: #fff;
+  color: #e51937;
+  opacity: 1;
+  transition: background-color, color, opacity .5s;
+  animation: none;
 }
 
 .main2__car {
@@ -627,6 +657,8 @@ body {
   color: #fff;
   text-transform: uppercase;
   text-decoration: none;
+  cursor: pointer;
+  transition: opacity .3s;
 }
 
 .main2-buttons__order,
@@ -634,6 +666,8 @@ body {
   padding: 10px 40px;
   letter-spacing: 1px;
   border: 2px solid #fff;
+  opacity: .8;
+  animation: forbutton .8s infinite ease;  
 }
 
 .main3__protection-list {
@@ -648,4 +682,8 @@ body {
 .sign-star__text2 {
   font: 600 25px/30px Semibold, arial, helvetica, sans-serif;
   color: #fff;
+}
+
+@media (max-windth: 767px) {
+
 }
