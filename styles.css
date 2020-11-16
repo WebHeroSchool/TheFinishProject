@@ -258,6 +258,10 @@ body {
   padding-left: 6px;
 }
 
+.sign-test__img1 {
+  display: none;
+}
+
 @keyframes forbutton {
   0% {
     transform: rotateY(0deg);
@@ -499,6 +503,10 @@ body {
   z-index: 10;
 }
 
+.main2__car1 {
+  display: none;
+}
+
 .main3 {
   display: flex;
 }
@@ -607,6 +615,10 @@ body {
   padding-top: 12%;
 }
 
+.main3-car1 {
+  display: none;
+}
+
 .main2__title,
 .main3__title,
 .main3__protection {
@@ -630,6 +642,7 @@ body {
 .sign-bag__software {
   font: 600 20px/24px Semibold, arial, helvetica, sans-serif;
   color: #fff;
+  letter-spacing: 1px;
 }
 
 .sign-display__text,
@@ -667,7 +680,7 @@ body {
   letter-spacing: 1px;
   border: 2px solid #fff;
   opacity: .8;
-  animation: forbutton .8s infinite ease;  
+  animation: forbutton .8s infinite ease;
 }
 
 .main3__protection-list {
@@ -684,6 +697,321 @@ body {
   color: #fff;
 }
 
-@media (max-windth: 767px) {
+@media (min-width: 700px) and (max-width: 1300px) {
+  .header {
+    margin-bottom: 10%;
+  }
 
+  .logo {
+    padding-left: 13px;
+  }
+
+  .menu-model {
+    display: none;
+  }
+
+  .menu-entrance {
+    display: none;
+  }
+
+  .lines {
+    width: 35px;
+    padding-bottom: 11px;
+    margin: 5px 0 0 68%;
+    border-bottom: 3px solid red;
+  }
+
+  .lines::before,
+  .lines::after {
+    padding-bottom: 7px;
+    border-bottom: 3px solid red;
+  }
+
+  .main1__welcome {
+    margin-top: -14px;
+    margin-bottom: 10%;
+  }
+
+  .main1__car {
+    width: 92%;
+    padding-left: 4%;
+    margin-bottom: 40px;
+  }
+
+  .signs {
+    width: 70%;
+    flex-flow: row wrap;
+    margin-bottom: 5.5%;
+  }
+
+  .sign-speed {
+    flex-basis: 40%;
+    padding-left: 4%;
+  }
+
+  .sign-speed__time, .sign-way__long {
+    font: 600 50px/61px Semibold, arial, helvetica, sans-serif;
+    padding-left: 3px;
+  }
+
+  .sign-speed__unit {
+    padding: 20px 0 0 12px;
+  }
+
+  .sign-speed__max {
+    padding-left: 17%;
+  }
+
+  .sign-speed__img {
+    width: 35%;
+    padding-top: 15px;
+  }
+
+  .sign-way {
+    flex-basis: 45%;
+    margin-right: 0;
+  }
+
+  .sign-way__long {
+    padding-left: 9px;
+  }
+
+  .sign-way__unit {
+    padding: 5px 0 0 15px;
+  }
+
+  .sign-way__img {
+    width: 23%;
+    padding: 10px 0 0 9px;
+  }
+
+  .sign-test {
+    display: block;
+    padding-left: 11%;
+    padding-top: 9%;
+    flex-basis: 30%;
+  }
+
+  .sign-test__drive {
+    font: bold 16px/20px Bold, arial, helvetica, sans-serif;
+    color: #e51937;
+    padding-left: 27%;
+  }
+
+  .sign-test__img {
+    display: none;
+  }
+
+  .sign-test__img1 {
+    display: inline;
+    float: left;
+    padding-top: 10px;
+  }
+
+  .footer__button-order {
+    animation: none;
+    margin-right: 11%;
+    padding: 17px 69px;
+    margin-top: 47px;
+    background: #e51937;
+    color: #fff;
+  }
+
+  .main2 {
+    flex-direction: column;
+  }
+
+  .main2__car {
+  display: none;
+  }
+
+  .main2__car1 {
+    display: block;
+    padding-top: 25%;
+  }
+
+  .main2__name-model {
+    padding-top: 15px;
+    padding-left: 56.5%;
+  }
+
+  .main2__infocar {
+    width: 100%;
+    margin: 0;
+  }
+
+  .main2__infocar-wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    padding-left: 32px;
+    padding-top: 7%;
+    width: 90%;
+  }
+
+  .main2__infocar-wrapper1 {
+    width: 80%;
+  }
+
+  .main2__title {
+    padding-top: 5px;
+    margin-bottom: 11px;
+  }
+
+  .main2__description {
+    padding-bottom: 20px;
+}
+
+  .main2-sign__wrapper {
+    flex-basis: 60%;
+    padding-left: 8%;
+  }
+
+  .sign-display {
+    padding-top: 3px;
+    margin-bottom: 25px;
+  }
+
+  .sign-display__size {
+    padding: 2px 0 0 20px;
+  }
+
+  .sign-display__inches {
+    padding: 16px 0 0 10px;
+  }
+
+  .sign-display__text {
+    margin-top: -1px;
+    width: max-content;
+  }
+
+  .sign-wi-fi {
+    margin-bottom: 20px;
+  }
+  .sign-wi-fi__img {
+    padding-top: 13px;
+  }
+
+  .sign-wi-fi__software {
+    padding: 0;
+  }
+
+  .sign-bag {
+    margin-bottom: 0;
+  }
+
+  .sign-bag__text {
+    padding-left: 33%;
+  }
+
+
+  .main2-buttons {
+    flex-wrap: wrap;
+    padding-top: 6%;
+    margin-bottom: 53px;
+  }
+
+  .main2-buttons__order {
+    font: bold 16px/20px Bold, arial, helvetica, sans-serif;
+    padding: 15px 62px;
+  }
+
+  .main2-buttons__more-info {
+    padding-left: 20%;
+    width: 27%;
+    margin-right: 20px;
+  }
+  .main2-buttons__text {
+    font: bold 16px/20px Bold, arial, helvetica, sans-serif;
+    padding: 3px 0 0 22%;
+  }
+  .more-info__img {
+    width: 15%;
+    padding-top: 11px;
+  }
+  .main3 {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .main3-car {
+    display: none;
+  }
+
+  .main3-car1 {
+    display: block;
+    position: relative;
+    padding-top: 10%;
+    margin-bottom: 35px;
+    margin-left: -4%;
+  }
+
+  .main3__wrapper {
+    width: 100%;
+    background: #e51937;
+  }
+
+
+  .main3__wrapper1 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: 100%;
+  }
+
+  .main3__wrapper2 {
+    width: 50%;
+  }
+
+  .main3__title {
+    padding-left: 35px;
+    padding-top: 40px;
+  }
+
+  .main3__description {
+    width: 84%;
+    padding-left: 35px;
+  }
+
+  .main3__wrapper3 {
+
+  }
+
+  .main3__protection {
+    padding: 19% 0 0 11%;
+  }
+
+  .main3__protection-list {
+    padding-left: 30px;
+    margin-bottom: 17%;
+  }
+
+  .sign-star {
+    display: none;
+  }
+
+  .main3-buttons {
+    flex-wrap: wrap;
+    width: 70%;
+    padding-left: 11%;
+    padding-top: 1px;
+    margin-bottom: 8.5%;
+  }
+
+  .main3-buttons__more-info {
+    font: bold 16px/20px Bold, arial, helvetica, sans-serif;
+    padding-top: 20px;
+    padding-right: 40px;
+  }
+
+  .main3-buttons__more {
+    width: 6%;
+    padding: 14px 10px 0 4.5%;
+  }
+
+  .main3-buttons__order {
+    font: bold 16px/20px Bold, arial, helvetica, sans-serif;
+    padding: 15px 62px;
+    margin-right: 10%;
+  }
 }
