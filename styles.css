@@ -713,6 +713,11 @@ body {
   color: #fff;
 }
 
+
+@media (min-width: 1300px) {
+
+}
+
 @media (min-width: 700px) and (max-width: 1300px) {
   .header {
     margin-bottom: 10%;
@@ -1002,10 +1007,6 @@ body {
     padding-left: 35px;
   }
 
-  .main3__wrapper3 {
-
-  }
-
   .main3__protection {
     padding: 19% 0 0 11%;
   }
@@ -1177,8 +1178,9 @@ body {
 
   .main2__car2 {
     display: block;
+    margin-bottom: -13px;
   }
-  
+
   .main2__infocar {
     width: 100%;
     margin: 0;
@@ -1228,5 +1230,5 @@ body {
     margin-bottom: 19%;
   }
   }
-
+  
 }
