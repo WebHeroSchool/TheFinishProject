@@ -19,7 +19,6 @@ body {
   display: inline-block;
   padding-left: 42px;
   margin-top: 3px;
-
 }
 
 .menu-model {
@@ -630,11 +629,23 @@ body {
   letter-spacing: 1px;
 }
 
+.main3-wordcar {
+  position: absolute;
+  padding-top: 10%;
+  padding-left: 44.5%;
+}
+
+.main3-wordcaripad,
+.main3-wordcarmobil {
+  display: none;
+}
+
 .main3-car {
   float: right;
   position: absolute;
   padding-left: 24%;
   padding-top: 12%;
+  z-index: 2;
 }
 
 .main3-car1, .main3-car2 {
@@ -718,7 +729,6 @@ body {
   font: 600 25px/30px Semibold, arial, helvetica, sans-serif;
   color: #fff;
 }
-
 
 @media (min-width: 1650px) {
   .logo-img {
@@ -813,7 +823,8 @@ body {
   }
 
   .main2-buttons {
-    width: 85%;
+    width: 90%;
+    padding-left: 3%;
   }
 
   .main3-buttons {
@@ -822,7 +833,11 @@ body {
 
   .main3-car {
     width: 70%;
-}
+  }
+
+  .main3-wordcar {
+    padding-left: 38%;
+  }
 }
 
 @media (min-width: 1262px) and (max-width: 1299px) {
@@ -838,6 +853,9 @@ body {
     width: 70%;
   }
 
+  .main2__description {
+    width: 100%;
+  }
   .main2-buttons {
     width: 90%;
     padding-left: 5%;
@@ -854,6 +872,10 @@ body {
 
   .main3-car {
     width: 73%;
+  }
+
+  .main3-wordcar {
+    padding-left: 35%;
   }
 }
 
@@ -1081,7 +1103,6 @@ body {
     padding-top: 6%;
     margin-bottom: 53px;
     margin-left: auto;
-    width: 70%;
     padding-left: 0;
   }
 
@@ -1109,6 +1130,19 @@ body {
     flex-direction: column-reverse;
   }
 
+  .main3-wordcar {
+    display: none;
+  }
+
+  .main3-wordcaripad {
+    display: block;
+    position: relative;
+    margin-top: -53%;
+    margin-bottom: 40%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
   .main3-car {
     display: none;
   }
@@ -1116,8 +1150,8 @@ body {
   .main3-car1 {
     display: block;
     position: relative;
-    padding-top: 5%;
-    margin-bottom: 35px;
+    padding-top: 10%;
+    margin-bottom: 10%;
     margin-left: auto;
     margin-right: auto;
     width: 70%;
@@ -1164,16 +1198,13 @@ body {
   }
 
   .main3-buttons {
-    flex-wrap: nowrap;
-    width: 50%;
-    padding-top: 1px;
-    margin-bottom: 8.5%;
-    margin-left: auto;
-    margin-right: auto;
+    padding-left: 15%;
+    width: 75%;
+    margin-bottom: 7%;
   }
 
   .main3-buttons__wrapper {
-    width: 50%;
+    width: 35%;
     flex-wrap: nowrap;
   }
 
@@ -1193,11 +1224,11 @@ body {
   .main3-buttons__order {
     font: bold 16px/20px Bold, arial, helvetica, sans-serif;
     padding: 15px 62px;
-    margin-right: 10%;
+    margin-right: 0;
   }
 }
 
-@media (min-width: 700px) and (max-width: 800px) {
+@media (min-width: 747px) and (max-width: 800px) {
   .header {
     margin-bottom: 10%;
   }
@@ -1249,6 +1280,7 @@ body {
     margin-left: auto;
     margin-right: auto;
     z-index: 1;
+    width: 100%;
   }
 
   .signs {
@@ -1322,7 +1354,6 @@ body {
   }
 
   .footer__button-order {
-    animation: none;
     margin-right: 11%;
     padding: 17px 69px;
     margin-top: 47px;
@@ -1334,13 +1365,18 @@ body {
     flex-direction: column;
   }
 
+  .main2__wrapper{
+    width: 100%;
+  }
+
   .main2__car {
   display: none;
   }
 
   .main2__car1 {
     display: block;
-    padding-top: 25%;
+    padding-top: 8%;
+    width: 100%;
   }
 
   .main2__name-model {
@@ -1358,7 +1394,7 @@ body {
     flex-direction: row;
     flex-wrap: nowrap;
     padding-left: 32px;
-    padding-top: 7%;
+    padding-top: 6.5%;
     width: 90%;
   }
 
@@ -1417,9 +1453,8 @@ body {
     padding-left: 33%;
   }
 
-
   .main2-buttons {
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     padding-top: 6%;
     margin-bottom: 53px;
   }
@@ -1430,18 +1465,19 @@ body {
   }
 
   .main2-buttons__more-info {
-    padding-left: 10%;
-    width: 34%;
-    margin-right: 27px;
+    padding-left: 9%;
+    margin-right: 4.5%;
+    flex-basis: 35%;
   }
+
   .main2-buttons__text {
     font: bold 16px/20px Bold, arial, helvetica, sans-serif;
-    padding: 3px 0 0 24%;
+    padding: 3px 0 0 19%;
   }
+
   .more-info__img {
-    width: 15%;
-    padding-top: 13px;
-    padding-left: 8px;
+    width: 14%;
+    padding: 13px 10px 0 14px;
   }
 
   .main3 {
@@ -1449,8 +1485,17 @@ body {
     flex-direction: column-reverse;
   }
 
-  .main3-car {
+  .main3-car,
+  .main3-wordcar {
     display: none;
+  }
+
+  .main3-wordcaripad {
+    display: block;
+    position: relative;
+    margin-top: -61%;
+    padding-left: 10px;
+    margin-bottom: 46.5%;
   }
 
   .main3-car1 {
@@ -1465,7 +1510,6 @@ body {
     width: 100%;
     background: #e51937;
   }
-
 
   .main3__wrapper1 {
     display: flex;
@@ -1501,9 +1545,15 @@ body {
     display: none;
   }
 
+  .main3-buttons__wrapper {
+      display: block;
+      width: 35%;
+      margin-right: 6%;
+  }
+
   .main3-buttons {
-    flex-wrap: wrap;
-    width: 70%;
+    flex-wrap: nowrap;
+    width: 83%;
     padding-left: 11%;
     padding-top: 1px;
     margin-bottom: 8.5%;
@@ -1511,23 +1561,360 @@ body {
 
   .main3-buttons__more-info {
     font: bold 16px/20px Bold, arial, helvetica, sans-serif;
-    padding-top: 20px;
-    padding-right: 40px;
+    padding-top: 5px;
+    padding-right: 0;
+    margin-right: 0;
   }
 
   .main3-buttons__more {
-    width: 6%;
-    padding: 14px 10px 0 4.5%;
+    padding: 12px 13px 0 10%;
+    width: 13%;
   }
 
   .main3-buttons__order {
     font: bold 16px/20px Bold, arial, helvetica, sans-serif;
     padding: 15px 62px;
-    margin-right: 10%;
   }
 }
 
-@media (max-width: 699px) {
+@media (min-width: 501px) and (max-width: 746px) {
+  .header {
+    margin-bottom: 10%;
+  }
+
+  .logo {
+    padding-left: 13px;
+  }
+
+  .menu-model {
+    display: none;
+  }
+
+  .menu-entrance {
+    display: none;
+  }
+
+  .lines {
+    width: 35px;
+    padding-bottom: 11px;
+    margin: 5px 0 0 50%;
+    border-bottom: 3px solid red;
+  }
+
+  .lines::before,
+  .lines::after {
+    padding-bottom: 7px;
+    border-bottom: 3px solid red;
+  }
+
+  .main1__welcome {
+    margin-top: -14px;
+    margin-bottom: 10%;
+  }
+
+  .main1__car {
+    width: 92%;
+    padding-left: 4%;
+    margin-bottom: 40px;
+  }
+
+  .main1__wordcar {
+    display: none;
+  }
+
+  .main1__wordcaripad {
+    display: block;
+    position: absolute;
+    margin-top: -13%;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 1;
+    width: 100%;
+  }
+
+  .signs {
+    width: 90%;
+    flex-flow: row wrap;
+    margin-bottom: 5.5%;
+  }
+
+  .sign-speed {
+    flex-basis: 45%;
+    padding-left: 4%;
+  }
+
+  .sign-speed__time, .sign-way__long {
+    font: 600 50px/61px Semibold, arial, helvetica, sans-serif;
+    padding-left: 3px;
+  }
+
+  .sign-speed__unit {
+    padding: 20px 0 0 12px;
+  }
+
+  .sign-speed__max {
+    padding-left: 17%;
+  }
+
+  .sign-speed__img {
+    width: 35%;
+    padding-top: 15px;
+  }
+
+  .sign-way {
+    flex-basis: 45%;
+    margin-right: 0;
+  }
+
+  .sign-way__long {
+    padding-left: 9px;
+  }
+
+  .sign-way__unit {
+    padding: 5px 0 0 15px;
+  }
+
+  .sign-way__img {
+    width: 23%;
+    padding: 10px 0 0 9px;
+  }
+
+  .sign-test {
+    display: block;
+    padding-top: 9%;
+    flex-basis: 30%;
+  }
+
+  .sign-test__drive {
+    font: bold 16px/20px Bold, arial, helvetica, sans-serif;
+    color: #e51937;
+    padding-left: 27%;
+  }
+
+  .sign-test__img {
+    display: none;
+  }
+
+  .sign-test__img1 {
+    display: inline;
+    float: left;
+    padding-top: 10px;
+  }
+
+  .footer__button-order {
+    margin-right: 11%;
+    padding: 17px 69px;
+    margin-top: 47px;
+    background: #e51937;
+    color: #fff;
+  }
+
+  .main2 {
+    flex-direction: column;
+  }
+
+  .main2__wrapper{
+    width: 100%;
+  }
+
+  .main2__car {
+  display: none;
+  }
+
+  .main2__car1 {
+    display: block;
+    padding-top: 8%;
+    width: 100%;
+  }
+
+  .main2__name-model {
+    padding-top: 0;
+    padding-left: 40%;
+  }
+
+  .main2__infocar {
+    width: 100%;
+    margin: 0;
+  }
+
+  .main2__infocar-wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    padding-left: 3px;
+    padding-top: 6.5%;
+    width: 90%;
+  }
+
+  .main2__title {
+    padding-top: 5px;
+    margin-bottom: 11px;
+  }
+
+  .main2__description {
+    padding-bottom: 20px;
+}
+
+  .main2-sign__wrapper {
+    flex-basis: 60%;
+    padding-left: 0;
+  }
+
+  .sign-display {
+    padding-top: 3px;
+    margin-bottom: 25px;
+  }
+
+  .sign-display__size {
+    padding: 2px 0 0 20px;
+  }
+
+  .sign-display__inches {
+    padding: 16px 0 0 10px;
+  }
+
+  .sign-display__text {
+    margin-top: -1px;
+    width: max-content;
+  }
+
+  .sign-wi-fi {
+    margin-bottom: 20px;
+  }
+  .sign-wi-fi__img {
+    padding-top: 13px;
+  }
+
+  .sign-wi-fi__software {
+    padding: 0;
+  }
+
+  .sign-bag {
+    margin-bottom: 0;
+  }
+
+  .sign-bag__text {
+    padding-left: 47%;
+  }
+
+  .main2-buttons {
+    flex-wrap: nowrap;
+    padding-top: 6%;
+    margin-bottom: 53px;
+    padding-left: 0;
+    width: 100%;
+  }
+
+  .main2-buttons__order {
+    font: bold 16px/20px Bold, arial, helvetica, sans-serif;
+    padding: 15px 62px;
+  }
+
+  .main2-buttons__more-info {
+    padding-left: 0;
+    margin-right: 4.5%;
+    flex-basis: 44%;
+  }
+
+  .main2-buttons__text {
+    font: bold 16px/20px Bold, arial, helvetica, sans-serif;
+    padding: 3px 0 0 19%;
+  }
+
+  .more-info__img {
+    width: 12%;
+    padding: 13px 10px 0 14px;
+  }
+
+  .main3 {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .main3-car,
+  .main3-wordcar {
+    display: none;
+  }
+
+  .main3-wordcaripad {
+    display: block;
+    position: relative;
+    margin-top: -86%;
+    padding-left: 10px;
+    margin-bottom: 60%;
+  }
+
+  .main3-car1 {
+    display: block;
+    position: relative;
+    padding-top: 10%;
+    margin-bottom: 35px;
+    margin-left: -4%;
+  }
+
+  .main3__wrapper {
+    width: 100%;
+    background: #e51937;
+  }
+
+  .main3__wrapper1 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: 100%;
+  }
+
+  .main3__wrapper2 {
+    width: 100%;
+  }
+
+  .main3__title {
+    padding-left: 5px;
+    padding-top: 10px;
+  }
+
+  .main3__description {
+    width: 95%;
+    padding-left: 5px;
+    margin-bottom: 5%;
+  }
+
+  .main3__wrapper3 {
+    display: none;
+  }
+
+  .main3-buttons__wrapper {
+    display: block;
+    width: 40%;
+    margin-right: 6%;
+  }
+
+  .main3-buttons {
+    flex-wrap: nowrap;
+    width: auto;
+    padding-top: 1px;
+    margin-bottom: 8.5%;
+  }
+
+  .main3-buttons__more-info {
+    font: bold 16px/20px Bold, arial, helvetica, sans-serif;
+    padding-top: 5px;
+    padding-right: 0;
+    margin-right: 0;
+  }
+
+  .main3-buttons__more {
+    padding: 12px 6px 0 0;
+    width: 13%;
+  }
+
+  .main3-buttons__order {
+    font: bold 16px/20px Bold, arial, helvetica, sans-serif;
+    padding: 15px 62px;
+  }
+}
+
+@media (min-width: 379px) and (max-width: 500px) {
   .main1__name-model {
     font: 600 50px/61px Semibold, arial, helvetica, sans-serif;
   }
@@ -1587,6 +1974,7 @@ body {
   .main1__wordcarmobil {
     display: block;
     position: absolute;
+    width: 100%;
   }
 
   .main1__car {
@@ -1637,7 +2025,210 @@ body {
 
   .sign-test {
     padding-left: 0;
-    width: 40%;
+    width: 39%;
+  }
+
+  .footer__button-order {
+    margin-right: 9px;
+  }
+
+  .main2__name-model {
+    display: none;
+  }
+
+  .main2 {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .main2__car {
+    display: none;
+  }
+
+  .main2__car2 {
+    display: block;
+    width: 100%;
+    margin-bottom: -13px;
+  }
+
+  .main2__wrapper {
+    width: 100%;
+  }
+
+  .main2__infocar {
+    width: 100%;
+    margin: 0;
+  }
+
+  .main2__infocar-wrapper {
+    padding: 20px 0 0 24px;
+    width: 90%;
+  }
+
+  .main2__title {
+    padding-left: 12%;
+  }
+
+  .main2__description {
+    padding-left: 12%;
+    padding-bottom: 37px;
+  }
+
+  .main3 {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .main3-car,
+  .main3-wordcar {
+    display: none;
+  }
+
+  .main3-wordcarmobil {
+    display: block;
+    position: relative;
+    margin-top: -66%;
+    margin-bottom: 46%;
+  }
+
+  .main3-car2 {
+    display: block;
+    position: relative;
+    padding-top: 15%;
+    padding-right: 14px;
+    margin-bottom: 33px;
+  }
+
+  .main3__wrapper {
+    width: 100%;
+  }
+
+  .main3__title {
+    width: 86%;
+    padding-top: 5%;
+    padding-left: 12%;
+    margin: 0;
+  }
+
+  .main3__description {
+    width: 85%;
+    padding-left: 12%;
+    margin-bottom: 19%;
+  }
+}
+
+@media (min-width: 325px) and (max-width: 378px) {
+  .main1__name-model {
+    font: 600 50px/61px Semibold, arial, helvetica, sans-serif;
+  }
+
+  .main1__welcome {
+    font: 500 10px/12px Medium, arial, helvetica, sans-serif;
+    margin-top: -6px;
+    padding-left: 8px;
+  }
+
+  .sign-speed__time, .sign-way__long {
+    font: 600 27px/33px Semibold, arial, helvetica, sans-serif;
+  }
+
+  .sign-speed__unit, .sign-way__unit {
+    font: 600 15px/18px Semibold, arial, helvetica, sans-serif;
+  }
+
+  .sign-speed__max, .sign-way__text {
+    font: normal 10px/12px Regular, arial, helvetica, sans-serif;
+  }
+
+  .header {
+    padding-top: 0;
+    justify-content: space-between;
+    margin-bottom: 7%;
+  }
+
+  .logo {
+    padding: 0;
+  }
+
+  .logo-img {
+    width: 80%;
+    padding-left: 2px;
+    padding-top: 2px;
+  }
+
+  .lines {
+    padding-top: 1px;
+    margin-right: 6%;
+  }
+
+  .menu-model,
+  .menu-entrance,
+  .main2-sign__wrapper,
+  .main2-buttons,
+  .main3__wrapper3,
+  .main3-buttons {
+    display: none;
+  }
+
+  .main1__wordcar {
+    display: none;
+  }
+
+  .main1__wordcarmobil {
+    display: block;
+    position: absolute;
+    width: 100%;
+  }
+
+  .main1__car {
+    padding-top: 11%;
+    padding-left: 3%;
+    width: 95%;
+  }
+  .signs {
+    width: 85%;
+    flex-flow: row wrap;
+    margin-bottom: 2%;
+  }
+
+  .sign-speed {
+    flex-basis: 45%;
+    padding-left: 4%;
+  }
+
+  .sign-speed__img {
+    width: 30%;
+    padding-top: 8px;
+  }
+
+  .sign-speed__unit {
+    padding-left: 9px;
+    margin-bottom: 3px;
+  }
+
+  .sign-way {
+    flex-basis: 45%;
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
+  .sign-way__img {
+    width: 21%;
+    padding: 4px 0 0 3px;
+  }
+
+  .sign-way__long {
+    padding-left: 10px;
+  }
+
+  .sign-way__unit {
+    padding-left: 9px;
+    margin-bottom: 3px;
+  }
+
+  .sign-test {
+    padding-left: 0;
+    width: 39%;
   }
 
   .footer__button-order {
@@ -1660,6 +2251,11 @@ body {
   .main2__car2 {
     display: block;
     margin-bottom: -13px;
+    width: 100%;
+  }
+
+  .main2__wrapper {
+    width: 100%;
   }
 
   .main2__infocar {
@@ -1682,8 +2278,16 @@ body {
     flex-direction: column-reverse;
   }
 
-  .main3-car {
+  .main3-car,
+  .main3-wordcar {
     display: none;
+  }
+
+  .main3-wordcarmobil {
+    display: block;
+    position: relative;
+    margin-top: -66%;
+    margin-bottom: 46%;
   }
 
   .main3-car2 {
@@ -1710,6 +2314,167 @@ body {
     padding-left: 31px;
     margin-bottom: 19%;
   }
+}
+
+  @media (max-width: 324px) {
+  .main1__name-model {
+    font: 600 50px/61px Semibold, arial, helvetica, sans-serif;
   }
 
+  .main1__welcome {
+    font: 500 10px/12px Medium, arial, helvetica, sans-serif;
+    margin-top: -6px;
+    padding-left: 8px;
+  }
+
+  .sign-speed__time, .sign-way__long {
+    font: 600 27px/33px Semibold, arial, helvetica, sans-serif;
+  }
+
+  .sign-speed__unit, .sign-way__unit {
+    font: 600 15px/18px Semibold, arial, helvetica, sans-serif;
+  }
+
+  .sign-speed__max, .sign-way__text {
+    font: normal 10px/12px Regular, arial, helvetica, sans-serif;
+  }
+
+  .header {
+    padding-top: 0;
+    justify-content: space-between;
+    margin-bottom: 7%;
+  }
+
+  .logo {
+    padding: 0;
+  }
+
+  .logo-img {
+    width: 80%;
+    padding-left: 2px;
+    padding-top: 2px;
+  }
+
+  .lines {
+    padding-top: 1px;
+    margin-right: 6%;
+  }
+
+  .menu-model,
+  .menu-entrance,
+  .main2-sign__wrapper,
+  .main2-buttons,
+  .main3__wrapper3,
+  .main3-buttons {
+    display: none;
+  }
+
+  .main1__wordcar {
+    display: none;
+  }
+
+  .main1__wordcarmobil {
+    display: block;
+    position: absolute;
+    width: 100%;
+  }
+
+  .main1__car {
+    padding-top: 11%;
+    padding-left: 3%;
+    width: 95%;
+  }
+
+
+  .sign-speed,
+  .sign-way,
+  .sign-test {
+    display: none;
+  }
+
+  .footer__button-order {
+    margin-right: 9px;
+  }
+
+  .main2__name-model {
+    display: none;
+  }
+
+  .main2 {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .main2__car {
+    display: none;
+  }
+
+  .main2__car2 {
+    display: block;
+    margin-bottom: -13px;
+    width: 100%;
+  }
+
+  .main2__wrapper {
+    width: 100%;
+  }
+
+  .main2__infocar {
+    width: 100%;
+    margin: 0;
+  }
+
+  .main2__infocar-wrapper {
+    padding-top: 20px;
+    width: 85%;
+  }
+
+  .main2__description {
+    padding-left: 3px;
+    padding-bottom: 37px;
+    width: 100%;
+  }
+
+  .main3 {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .main3-car,
+  .main3-wordcar {
+    display: none;
+  }
+
+  .main3-wordcarmobil {
+    display: block;
+    position: relative;
+    margin-top: -80%;
+    margin-bottom: 46%;
+  }
+
+  .main3-car2 {
+    display: block;
+    position: relative;
+    padding-top: 15%;
+    padding-right: 14px;
+    margin-bottom: 33px;
+  }
+
+  .main3__wrapper {
+    width: 100%;
+  }
+
+  .main3__title {
+    width: 90%;
+    padding-top: 5%;
+    padding-left: 3px;
+    margin: 0;
+  }
+
+  .main3__description {
+    width: 95%;
+    padding-left: 3px;
+    margin-bottom: 19%;
+  }
+}
 }
