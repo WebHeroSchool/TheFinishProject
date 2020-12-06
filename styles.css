@@ -1294,7 +1294,8 @@ body {
     padding-left: 4%;
   }
 
-  .sign-speed__time, .sign-way__long {
+  .sign-speed__time,
+  .sign-way__long {
     font: 600 50px/61px Semibold, arial, helvetica, sans-serif;
     padding-left: 3px;
   }
@@ -1409,7 +1410,7 @@ body {
 
   .main2__description {
     padding-bottom: 20px;
-}
+  }
 
   .main2-sign__wrapper {
     flex-basis: 60%;
@@ -1782,6 +1783,7 @@ body {
   .sign-wi-fi {
     margin-bottom: 20px;
   }
+
   .sign-wi-fi__img {
     padding-top: 13px;
   }
@@ -2133,15 +2135,18 @@ body {
     padding-left: 8px;
   }
 
-  .sign-speed__time, .sign-way__long {
+  .sign-speed__time,
+  .sign-way__long {
     font: 600 27px/33px Semibold, arial, helvetica, sans-serif;
   }
 
-  .sign-speed__unit, .sign-way__unit {
+  .sign-speed__unit,
+  .sign-way__unit {
     font: 600 15px/18px Semibold, arial, helvetica, sans-serif;
   }
 
-  .sign-speed__max, .sign-way__text {
+  .sign-speed__max,
+  .sign-way__text {
     font: normal 10px/12px Regular, arial, helvetica, sans-serif;
   }
 
@@ -2190,7 +2195,7 @@ body {
     padding-left: 3%;
     width: 95%;
   }
-  
+
   .signs {
     width: 85%;
     flex-flow: row wrap;
