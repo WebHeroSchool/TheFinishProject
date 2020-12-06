@@ -523,7 +523,16 @@ body {
   text-transform: uppercase;
   text-decoration: none;
   cursor: pointer;
-  transition: opacity .3s;
+  transition: opacity 0.3s;
+}
+
+.main2-buttons__order,
+.main3-buttons__order {
+  padding: 10px 40px;
+  letter-spacing: 1px;
+  border: 2px solid #fff;
+  opacity: 0.8;
+  animation: forbutton 0.8s infinite ease;
 }
 
 .main2-buttons__order:hover,
@@ -678,7 +687,8 @@ body {
   z-index: 2;
 }
 
-.main3-car1, .main3-car2 {
+.main3-car1,
+.main3-car2 {
   display: none;
 }
 
@@ -718,15 +728,6 @@ body {
 .main3__list {
   font: bold 10px/12px Bold, arial, helvetica, sans-serif;
   color: #fff;
-}
-
-.main2-buttons__order,
-.main3-buttons__order {
-  padding: 10px 40px;
-  letter-spacing: 1px;
-  border: 2px solid #fff;
-  opacity: .8;
-  animation: forbutton .8s infinite ease;
 }
 
 @media (min-width: 1650px) {
@@ -946,7 +947,8 @@ body {
     padding-left: 4%;
   }
 
-  .sign-speed__time, .sign-way__long {
+  .sign-speed__time,
+  .sign-way__long {
     font: 600 50px/61px Semibold, arial, helvetica, sans-serif;
     padding-left: 3px;
   }
@@ -1161,7 +1163,6 @@ body {
     background: #e51937;
   }
 
-
   .main3__wrapper1 {
     display: flex;
     flex-direction: row;
@@ -1211,7 +1212,7 @@ body {
     font: bold 16px/20px Bold, arial, helvetica, sans-serif;
     padding-left: 15%;
     margin: 0;
-}
+  }
 
   .main3-buttons__more {
     width: 11%;
@@ -1369,7 +1370,7 @@ body {
   }
 
   .main2__car {
-  display: none;
+    display: none;
   }
 
   .main2__car1 {
@@ -1436,6 +1437,7 @@ body {
   .sign-wi-fi {
     margin-bottom: 20px;
   }
+
   .sign-wi-fi__img {
     padding-top: 13px;
   }
@@ -1712,12 +1714,12 @@ body {
     flex-direction: column;
   }
 
-  .main2__wrapper{
+  .main2__wrapper {
     width: 100%;
   }
 
   .main2__car {
-  display: none;
+    display: none;
   }
 
   .main2__car1 {
@@ -1924,15 +1926,18 @@ body {
     padding-left: 8px;
   }
 
-  .sign-speed__time, .sign-way__long {
+  .sign-speed__time,
+  .sign-way__long {
     font: 600 27px/33px Semibold, arial, helvetica, sans-serif;
   }
 
-  .sign-speed__unit, .sign-way__unit {
+  .sign-speed__unit,
+  .sign-way__unit {
     font: 600 15px/18px Semibold, arial, helvetica, sans-serif;
   }
 
-  .sign-speed__max, .sign-way__text {
+  .sign-speed__max,
+  .sign-way__text {
     font: normal 10px/12px Regular, arial, helvetica, sans-serif;
   }
 
@@ -2185,6 +2190,7 @@ body {
     padding-left: 3%;
     width: 95%;
   }
+  
   .signs {
     width: 85%;
     flex-flow: row wrap;
